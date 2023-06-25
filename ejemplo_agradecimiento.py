@@ -18,6 +18,7 @@ class Greetings(KnowledgeEngine):
     @Rule(Fact(action='greet'),
           Fact(name=MATCH.name),
           Fact(location=MATCH.location))
+    
     def greet(self, name, location):
         print("Hi %s! How is the weather in %s?" % (name, location))
 
